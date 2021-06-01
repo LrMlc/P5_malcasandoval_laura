@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/113b72d011.js" crossorigin="anonymous"></script>
+    <title>Orinoco</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<!------Header------>
+<header>
+    <nav>
+        <a class="logo" href="index.html"><i class="fas fa-shopping-cart"></i>Orinoco</a>
+        <ul class="research-orinoco">
+            <li>
+                <a class="home" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="basket" href="basket.html">Basket(<span id="numberarticle"></span>)</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-----Fin Header---->
+<!-------MAIN------->
+<main id="product">
+    <div class="Main-product">
+        <div class="row">
+            <div class="col">
+                <div id="SelectionProduct">
+                    <label for="lenses">Choisissez une lentille pour votre caméra:</label><br />
+                    <select name="lenses" id="lenses"></select>
+                    <div id="DescriptionProduct"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button" id="ButtonBasket">Add to cart</button>
+            </div>
+        </div>
+    </div>
+</main>
+<!----Footer----->
+<footer>
+    <a class="contact" href="mailto:orinoco@gmail.com"><i class="fas fa-at"></i>Contact</a>
+    <div class="social_media">
+        <p><i class="fab fa-facebook-square"></i></p>
+        <p><i class="fab fa-twitter"></i></p>
+        <p><i class="fab fa-instagram"></i></p>
+
+    </div>
+</footer>
+<!-------Footer------->
+<script src="./helper.js"></script>
+<script src="./product.js"></script>
+</body>
+</html>

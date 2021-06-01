@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body{
+    font-family: 'Newsreader', serif;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+ background-blend-mode: screen;
+}
+/*Header*/
+header{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}    
+
+nav{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    font-size: 20px;
+    font-family: 'Schoolbell', cursive;
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+nav a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav i{
+    background: linear-gradient(to right, #EA9D03, #6527FC) ;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-right:10px ;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    color: #fff;
+}
+nav li{
+    padding: 20px;
+    color: whitesmoke!important;
+}
+/*Main*/
+a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    margin: 20px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.buble{
+   position: absolute;
+   background-color: honeydew;
+   border-radius: 5px;
+   padding:8px;
+   margin-top: 10px;
+   box-shadow: 1px 1px 0 0.5px rgba(0,0,0,0.2);
+   transform: scale(0);
+   transition: 1s;
+}
+.product:hover > .buble{
+    transform: scale(1);
+}
+.product{
+    margin-right: 20px;
+}
+.product img, 
+#SelectionProduct ,
+img{
+    width: 350px;
+}
+#SelectionProduct{
+    display: table-caption;
+}
+.product .camera_details{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product .description p{
+    margin-top: -10px;
+
+}
+/*Footer*/
+
+footer{
+    margin-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+footer .social_media{
+    display: flex;
+    margin-right: 80px;
+    padding: 10px;
+    text-align: center;
+    width: 20px;
+    cursor:pointer;
+
+}
+footer .social_media p{
+    margin-right: 15px;
+}
+.contact{
+    color: white;
+    align-self: center;
+}
+/*Basket*/
+.Basket{
+    text-align: center;
+}

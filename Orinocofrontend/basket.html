@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/113b72d011.js" crossorigin="anonymous"></script>
+    <title>Orinoco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!------Header------>
+    <header>
+        <nav>
+            <a class="logo" href="index.html"><i class="fas fa-shopping-cart"></i>Orinoco</a>
+            <ul class="research-orinoco">
+                <li>
+                    <a class="home" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="basket" href="basket.html">Basket(<span id="numberarticle"></span>)</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--------main------->
+    <div id="container-basket-product">
+        <div class="Basket" id="basket">
+            <h1>Your basket :</h1>
+            <div class="emptybasket" id="emptybasket">
+                <p id="noproduct"></p>
+            </div>
+            <div id="basketcontent">
+
+            </div>
+            <div id="display-price"></div>
+            <div class="basketfilled" id="basketfilled">
+                <div id="Sectionform">
+                    <p>Please fill out this form, in order to make your purchase.</p>
+                    <form method="post" id="form">
+                        <fieldset>
+                            <legend>Identify yourself</legend>
+                            <div class="identity">
+                                <label class="labelform">Last name :</label>
+                                <input type="text" name="last-name" id ="Last-name" placeholder="last name" required>
+
+                            </div>
+                            <div class="identity">
+                                <label class="labelform">First name :</label>
+                                <input type="text" name="first-name" id="First-name" placeholder="first name" required>
+
+                            </div>
+                            <div class="identity">
+                                <label for="Email" class="labelform">Mail address :</label>
+                                <input type="email" name="Email" id="Email" placeholder="Email" required>
+
+                            </div>
+                        </fieldset>
+                        <fieldset class="Billing">
+                            <legend>Billing adress</legend>
+                            <div class="identity">
+                                <label for="Address" class="labelform">Adress :</label>
+                                <input type="text" name="Address" id="Address" placeholder="Address" required>
+
+                            </div>
+                            <div class="identity">
+                                <label class="labelform">City :</label>
+                                <input type="text" name="city" id="City" placeholder="City" required>
+                            </div>
+                        </fieldset>
+                        <button type="submit" class="btn" id="formbutton">Send</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----Footer----->
+    <footer>
+        <a class="contact" href="mailto:orinoco@gmail.com"><i class="fas fa-at"></i>Contact</a>
+        <div class="social_media">
+            <p><i class="fab fa-facebook-square"></i></p>
+            <p><i class="fab fa-twitter"></i></p>
+            <p><i class="fab fa-instagram"></i></p>
+
+        </div>
+    </footer>
+    <script src="./helper.js"></script>
+    <script src="./basket.js"></script>
+    <!-------Footer------->
+</body>
+
+</html>
